@@ -9,12 +9,11 @@ public class Vehicule {
     private String immatriculation;
     private float prix;
     private boolean loue;
-    private String photo;
 
     public Vehicule() {
     }
 
-    public Vehicule(int idVehicule, String marque, String modele, String description, String immatriculation, float prix, boolean loue, String photo) {
+    public Vehicule(int idVehicule, String marque, String modele, String description, String immatriculation, float prix, boolean loue) {
         this.idVehicule = idVehicule;
         this.marque = marque;
         this.modele = modele;
@@ -22,7 +21,6 @@ public class Vehicule {
         this.immatriculation = immatriculation;
         this.prix = prix;
         this.loue = loue;
-        this.photo = photo;
     }
 
     public int getIdVehicule() {
@@ -81,14 +79,6 @@ public class Vehicule {
         this.loue = loue;
     }
 
-    public String getPhoto() {
-        return photo;
-    }
-
-    public void setPhoto(String photo) {
-        this.photo = photo;
-    }
-
     @Override
     public String toString() {
         return "Vehicule{" +
@@ -98,8 +88,7 @@ public class Vehicule {
                 ", description='" + description + '\'' +
                 ", immatriculation='" + immatriculation + '\'' +
                 ", prix=" + prix +
-                ", loue=" + loue +
-                ", photo='" + photo + '\'' +
+                ", loue=" + loue + '\'' +
                 '}';
     }
 }

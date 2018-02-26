@@ -37,9 +37,7 @@ public class GestionBdd extends SQLiteOpenHelper {
                 VehiculeContract.COL_PRIX +
                 " REAl, " +
                 VehiculeContract.COL_LOUE +
-                " INTEGER, " +
-                VehiculeContract.COL_PHOTO +
-                " BLOB " +
+                " INTEGER " +
                 ");";
         //on l'execute
         sqLiteDatabase.execSQL(requete);
