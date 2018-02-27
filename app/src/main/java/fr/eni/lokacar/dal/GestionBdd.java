@@ -6,8 +6,6 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
-import fr.eni.lokacar.bo.Location;
-import fr.eni.lokacar.bo.Vehicule;
 import fr.eni.lokacar.contracts.AgenceContract;
 import fr.eni.lokacar.contracts.BddContract;
 import fr.eni.lokacar.contracts.ClientContract;
@@ -34,13 +32,13 @@ public class GestionBdd extends SQLiteOpenHelper {
                 "CREATE TABLE " +
                 AgenceContract.TABLE_NAME +
                 "(" +
-                AgenceContract.COL_ID +
+                AgenceContract.COL_IDAGENCE +
                 " INTEGER PRIMARY KEY AUTOINCREMENT," +
-                AgenceContract.COL_NOM +
+                AgenceContract.COL_NOMAGENCE +
                 " TEXT, " +
-                AgenceContract.COL_VILLE +
+                AgenceContract.COL_VILLEAGENCE +
                 " TEXT, " +
-                AgenceContract.COL_CODEPOSTAL +
+                AgenceContract.COL_CODEPOSTALAGENCE +
                 " INTEGER " +
                 ");";
 
@@ -58,15 +56,15 @@ public class GestionBdd extends SQLiteOpenHelper {
                 "CREATE TABLE " +
                 EmployeContract.TABLE_NAME +
                 "(" +
-                EmployeContract.COL_ID +
+                EmployeContract.COL_IDEMPLOYE +
                 " INTEGER PRIMARY KEY AUTOINCREMENT," +
-                EmployeContract.COL_NOM +
+                EmployeContract.COL_NOMEMPLOYE +
                 " TEXT, " +
-                EmployeContract.COL_PRENOM +
+                EmployeContract.COL_PRENOMEMPLOYE +
                 " TEXT, " +
-                EmployeContract.COL_EMAIL +
+                EmployeContract.COL_EMAILEMPLOYE +
                 " TEXT, " +
-                EmployeContract.COL_MOTDEPASSE +
+                EmployeContract.COL_MOTDEPASSEEMPLOYE +
                 " TEXT, " +
                 EmployeContract.COL_IDAGENCE +
                 " INTEGER, FOREIGN KEY ( " +
@@ -91,7 +89,7 @@ public class GestionBdd extends SQLiteOpenHelper {
                 "CREATE TABLE " +
                 VehiculeContract.TABLE_NAME +
                 "(" +
-                VehiculeContract.COL_ID +
+                VehiculeContract.COL_IDVEHICULE +
                 " INTEGER PRIMARY KEY AUTOINCREMENT," +
                 VehiculeContract.COL_MARQUE +
                 " TEXT, " +
@@ -128,21 +126,21 @@ public class GestionBdd extends SQLiteOpenHelper {
                 "CREATE TABLE " +
                 ClientContract.TABLE_NAME +
                 "(" +
-                ClientContract.COL_ID +
+                ClientContract.COL_IDCLIENT +
                 " INTEGER PRIMARY KEY AUTOINCREMENT," +
-                ClientContract.COL_NOM +
+                ClientContract.COL_NOMCLIENT +
                 " TEXT, " +
-                ClientContract.COL_PRENOM +
+                ClientContract.COL_PRENOMCLIENT +
                 " TEXT, " +
-                ClientContract.COL_ADRESSE +
+                ClientContract.COL_ADRESSECLIENT +
                 " TEXT, " +
-                ClientContract.COL_CODEPOSTAL +
+                ClientContract.COL_CODEPOSTALCLIENT +
                 " INTEGER, " +
-                ClientContract.COL_VILLE +
+                ClientContract.COL_VILLECLIENT +
                 " TEXT, " +
-                ClientContract.COL_TELEPHONE +
+                ClientContract.COL_TELEPHONECLIENT +
                 " INTEGER, " +
-                ClientContract.COL_EMAIL +
+                ClientContract.COL_EMAILCLIENT +
                 " TEXT " +
                 ClientContract.COL_IDVEHICULE +
                 " INTEGER, FOREIGN KEY ( " +
@@ -167,7 +165,7 @@ public class GestionBdd extends SQLiteOpenHelper {
                 "CREATE TABLE " +
                  LocationContract.TABLE_NAME +
                 "(" +
-                LocationContract.COL_ID +
+                LocationContract.COL_IDLOCATION +
                 " INTEGER PRIMARY KEY AUTOINCREMENT," +
                 LocationContract.COL_DATE_DEBUT +
                 " TEXT, " +
