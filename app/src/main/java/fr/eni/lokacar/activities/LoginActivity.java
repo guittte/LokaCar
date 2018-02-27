@@ -1,4 +1,4 @@
-package activities;
+package fr.eni.lokacar.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
