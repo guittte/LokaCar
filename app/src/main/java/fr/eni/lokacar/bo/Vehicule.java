@@ -8,12 +8,12 @@ public class Vehicule {
     private String description;
     private String immatriculation;
     private float prix;
-    private boolean loue;
+    private long loue;
 
     public Vehicule() {
     }
 
-    public Vehicule(int idVehicule, String marque, String modele, String description, String immatriculation, float prix, boolean loue) {
+    public Vehicule(int idVehicule, String marque, String modele, String description, String immatriculation, float prix, long loue) {
         this.idVehicule = idVehicule;
         this.marque = marque;
         this.modele = modele;
@@ -71,11 +71,11 @@ public class Vehicule {
         this.prix = prix;
     }
 
-    public boolean isLoue() {
+    public long isLoue() {
         return loue;
     }
 
-    public void setLoue(boolean loue) {
+    public void setLoue(long loue) {
         this.loue = loue;
     }
 
