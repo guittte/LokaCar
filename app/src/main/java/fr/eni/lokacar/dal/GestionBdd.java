@@ -204,5 +204,22 @@ public class GestionBdd extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
 
+        String requete = "DROP TABLE IF EXISTS " +
+                AgenceContract.TABLE_NAME +
+                ", " +
+                EmployeContract.TABLE_NAME +
+                ", " +
+                VehiculeContract.TABLE_NAME +
+                ", " +
+                ClientContract.TABLE_NAME +
+                ", " +
+                LocationContract.TABLE_NAME
+                ;
+
+        //on supprime la table
+        sqLiteDatabase.execSQL(requete);
+
+        //on la recree
+        onCreate(sqLiteDatabase);
     }
 }
