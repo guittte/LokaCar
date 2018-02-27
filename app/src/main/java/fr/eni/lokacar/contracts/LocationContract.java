@@ -10,6 +10,7 @@ public class LocationContract {
     public static final String COL_ETAT_ENTRANT = " ETAT_ENTRANT ";
     public static final String COL_ETAT_SORTANT = " ETAT_SORTANT ";
     public static final String COL_IDCLIENT = " IDCLIENT ";
+    public static final String COL_IDVEHICULE = " IDVEHICULE ";
 
     public static final int NUM_COL_ID = 0;
     public static final int NUM_COL_DATE_DEBUT = 1;
@@ -17,4 +18,6 @@ public class LocationContract {
     public static final int NUM_COL_ETAT_ENTRANT = 3;
     public static final int NUM_COL_ETAT_SORTANT = 4;
     public static final int NUM_COL_IDCLIENT = 5;
+    public static final int NUM_COL_IDVEHICULE = 6;
+
 }
