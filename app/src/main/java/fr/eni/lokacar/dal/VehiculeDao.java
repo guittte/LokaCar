@@ -23,7 +23,7 @@ public class VehiculeDao {
     /**
      * CREATE
      * permet d'inserer un vehicule dans la bdd
-     * @param item Vehicule a inserer
+     * @param item vehicule a inserer
      * @return identifiant du vehicule insere
      */
     public long insert(Vehicule item){
