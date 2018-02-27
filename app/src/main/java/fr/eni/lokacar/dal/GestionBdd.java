@@ -6,6 +6,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
 import fr.eni.lokacar.bo.Location;
+import fr.eni.lokacar.bo.Vehicule;
 import fr.eni.lokacar.contracts.AgenceContract;
 import fr.eni.lokacar.contracts.BddContract;
 import fr.eni.lokacar.contracts.ClientContract;
@@ -64,7 +65,15 @@ public class GestionBdd extends SQLiteOpenHelper {
                 EmployeContract.COL_EMAIL +
                 " TEXT, " +
                 EmployeContract.COL_MOTDEPASSE +
-                " TEXT " +
+                " TEXT, " +
+                EmployeContract.COL_IDAGENCE +
+                " INTEGER, FOREIGN KEY ( " +
+                EmployeContract.COL_IDAGENCE +
+                " ) REFERENCES " +
+                AgenceContract.TABLE_NAME +
+                " ( " +
+                EmployeContract.COL_IDAGENCE +
+                " ) " +
                 ");";
 
         //on l'execute
@@ -94,6 +103,14 @@ public class GestionBdd extends SQLiteOpenHelper {
                 " REAl, " +
                 VehiculeContract.COL_LOUE +
                 " INTEGER " +
+                VehiculeContract.COL_IDAGENCE +
+                " INTEGER, FOREIGN KEY ( " +
+                VehiculeContract.COL_IDAGENCE +
+                " ) REFERENCES " +
+                AgenceContract.TABLE_NAME +
+                " ( " +
+                VehiculeContract.COL_IDAGENCE +
+                " ) " +
                 ");";
 
         //on l'execute
@@ -125,6 +142,14 @@ public class GestionBdd extends SQLiteOpenHelper {
                 " INTEGER, " +
                 ClientContract.COL_EMAIL +
                 " TEXT " +
+                ClientContract.COL_IDVEHICULE +
+                " INTEGER, FOREIGN KEY ( " +
+                ClientContract.COL_IDVEHICULE +
+                " ) REFERENCES " +
+                VehiculeContract.TABLE_NAME +
+                " ( " +
+                ClientContract.COL_IDVEHICULE +
+                " ) " +
                 ");";
 
         //on l'execute
@@ -150,6 +175,14 @@ public class GestionBdd extends SQLiteOpenHelper {
                 " TEXT, " +
                 LocationContract.COL_ETAT_SORTANT +
                 " TEXT, " +
+                LocationContract.COL_IDCLIENT +
+                " INTEGER, FOREIGN KEY ( " +
+                LocationContract.COL_IDCLIENT +
+                " ) REFERENCES " +
+                ClientContract.TABLE_NAME +
+                " ( " +
+                LocationContract.COL_IDCLIENT +
+                " ) " +
                 ");";
 
         //on l'execute

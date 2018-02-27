@@ -4,14 +4,15 @@ public class ClientContract {
 
     public static final String TABLE_NAME = "Clients";
 
-    public static final String COL_ID = " ID ";
-    public static final String COL_NOM = " NOM ";
-    public static final String COL_PRENOM = " PRENOM ";
-    public static final String COL_ADRESSE = " ADRESSE ";
-    public static final String COL_CODEPOSTAL = " CODEPOSTAL ";
-    public static final String COL_VILLE = " VILLE ";
-    public static final String COL_TELEPHONE = " TELEPHONE ";
-    public static final String COL_EMAIL  = " EMAIL ";
+    public static final String COL_ID = " IDCLIENT ";
+    public static final String COL_NOM = " NOMCLIENT ";
+    public static final String COL_PRENOM = " PRENOMCLIENT ";
+    public static final String COL_ADRESSE = " ADRESSECLIENT ";
+    public static final String COL_CODEPOSTAL = " CODEPOSTALCLIENT ";
+    public static final String COL_VILLE = " VILLECLIENT ";
+    public static final String COL_TELEPHONE = " TELEPHONECLIENT ";
+    public static final String COL_EMAIL  = " EMAILCLIENT ";
+    public static final String COL_IDVEHICULE = " IDVEHICULE ";
 
     public static final int NUM_COL_ID = 0;
     public static final int NUM_COL_NOM = 1;
@@ -21,4 +22,6 @@ public class ClientContract {
     public static final int NUM_COL_VILLE = 5;
     public static final int NUM_COL_TELEPHONE = 6;
     public static final int NUM_COL_EMAIL = 7;
+    public static final int NUM_COL_IDVEHICULE = 8;
+
 }
