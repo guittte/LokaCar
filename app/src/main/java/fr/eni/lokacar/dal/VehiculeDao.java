@@ -80,7 +80,7 @@ public class VehiculeDao {
             //on ajoute les Vehicules nouvellement crees dans une liste
             resultat.add(vehicule);
         }
-
+        resultatDeLaRequete.close();
         return resultat;
     }
 }
