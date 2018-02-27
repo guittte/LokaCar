@@ -45,6 +45,7 @@ public class GestionBdd extends SQLiteOpenHelper {
                 ");";
 
         //on l'execute
+        Log.d(TAG,requeteAgence);
         sqLiteDatabase.execSQL(requeteAgence);
 
         //on met un log car il est facile de faire des erreurs a cet endroit
