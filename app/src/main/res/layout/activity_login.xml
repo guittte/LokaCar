@@ -7,15 +7,15 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="fr.eni.lokacar.LoginActivity">
+    tools:context="activities.LoginActivity">
+
 
     <TextView
         android:id="@+id/tv_bienvenue"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Bienvenue chez LokaCar"
-        android:textSize="30dp"
-
+        android:text="@string/bienvenue_chez_lokacar"
+        android:textSize="30sp"
         />
 
     <EditText
@@ -35,6 +35,8 @@
         android:inputType = "textPassword"
         />
 
+
+
     <Button
         android:id="@+id/btn_login"
         android:layout_width="match_parent"
@@ -42,6 +44,5 @@
         android:layout_below="@id/et_mdp"
         android:text="@string/se_connecter"
         android:onClick="login"/>
-
 
 </RelativeLayout>

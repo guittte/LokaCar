@@ -17,4 +17,7 @@
     <string name="entrez_votre_email">Entrez votre email :</string>
     <string name="se_connecter">Se connecter</string>
     <string name="entrez_votre_mot_de_passe">Entrez votre mot de passe</string>
+    <string name="bienvenue_chez_lokacar">Bienvenue chez LokaCar</string>
+    <string name="annuler">Annuler</string>
+    <string name="tentatives_restantes">Tentatives restantes :</string>
 </resources>

@@ -1,17 +1,17 @@
-package fr.eni.lokacar;
+package activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
 
-public class LoginActivity extends AppCompatActivity {
+import fr.eni.lokacar.R;
+
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
-    }
+        setContentView(R.layout.activity_main);
 
-    public void login(View view) {
+        System.out.println("Toto");
     }
 }
