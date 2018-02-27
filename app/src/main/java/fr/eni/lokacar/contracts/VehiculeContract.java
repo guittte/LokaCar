@@ -4,7 +4,7 @@ public class VehiculeContract {
 
     public static final String TABLE_NAME = "Vehicules";
 
-    public static final String COL_ID = " IDVEHICULE ";
+    public static final String COL_IDVEHICULE = " IDVEHICULE ";
     public static final String COL_MARQUE = " MARQUE ";
     public static final String COL_MODELE = " MODELE ";
     public static final String COL_DESCRIPTION = " DESCRIPTION ";
@@ -14,7 +14,7 @@ public class VehiculeContract {
     public static final String COL_IDAGENCE = " IDAGENCE ";
 
 
-    public static final int NUM_COL_ID = 0;
+    public static final int NUM_COL_IDVEHICULE = 0;
     public static final int NUM_COL_MARQUE = 1;
     public static final int NUM_COL_MODELE = 2;
     public static final int NUM_COL_DESCRIPTION = 3;
