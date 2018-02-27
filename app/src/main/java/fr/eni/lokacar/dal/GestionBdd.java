@@ -25,8 +25,9 @@ public class GestionBdd extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
 
-        //on met la requete sql dans un string
-        String requete =
+        //on met les requetes sql dans des strings
+
+        String requeteAgence =
                 //creation table agence
                 "CREATE TABLE " +
                 AgenceContract.TABLE_NAME +
@@ -39,8 +40,17 @@ public class GestionBdd extends SQLiteOpenHelper {
                 " TEXT, " +
                 AgenceContract.COL_CODEPOSTAL +
                 " INTEGER " +
-                ");" +
+                ");";
 
+        //on l'execute
+        sqLiteDatabase.execSQL(requeteAgence);
+
+        //on met un log car il est facile de faire des erreurs a cet endroit
+        Log.d(TAG, "Creation table agence : " + requeteAgence);
+
+
+
+        String requeteEmploye =
                 //creation table employe
                 "CREATE TABLE " +
                 EmployeContract.TABLE_NAME +
@@ -55,8 +65,17 @@ public class GestionBdd extends SQLiteOpenHelper {
                 " TEXT, " +
                 EmployeContract.COL_MOTDEPASSE +
                 " TEXT " +
-                ");" +
+                ");";
 
+        //on l'execute
+        sqLiteDatabase.execSQL(requeteEmploye);
+
+        //on met un log car il est facile de faire des erreurs a cet endroit
+        Log.d(TAG, "Creation table employe : " + requeteEmploye);
+
+
+
+        String requeteVehicule =
                 //creation table vehicule
                 "CREATE TABLE " +
                 VehiculeContract.TABLE_NAME +
@@ -75,8 +94,17 @@ public class GestionBdd extends SQLiteOpenHelper {
                 " REAl, " +
                 VehiculeContract.COL_LOUE +
                 " INTEGER " +
-                ");" +
+                ");";
 
+        //on l'execute
+        sqLiteDatabase.execSQL(requeteVehicule);
+
+        //on met un log car il est facile de faire des erreurs a cet endroit
+        Log.d(TAG, "Creation table vehicule : " + requeteVehicule);
+
+
+
+        String requeteClient =
                 //creation table client
                 "CREATE TABLE " +
                 ClientContract.TABLE_NAME +
@@ -97,8 +125,17 @@ public class GestionBdd extends SQLiteOpenHelper {
                 " INTEGER, " +
                 ClientContract.COL_EMAIL +
                 " TEXT " +
-                ");" +
+                ");";
 
+        //on l'execute
+        sqLiteDatabase.execSQL(requeteClient);
+
+        //on met un log car il est facile de faire des erreurs a cet endroit
+        Log.d(TAG, "Creation table client : " + requeteClient);
+
+
+
+        String requeteLocation =
                 //creation table location
                 "CREATE TABLE " +
                  LocationContract.TABLE_NAME +
@@ -116,10 +153,10 @@ public class GestionBdd extends SQLiteOpenHelper {
                 ");";
 
         //on l'execute
-        sqLiteDatabase.execSQL(requete);
+        sqLiteDatabase.execSQL(requeteLocation);
 
         //on met un log car il est facile de faire des erreurs a cet endroit
-        Log.d(TAG, "Requete : " + requete);
+        Log.d(TAG, "Creation table location : " + requeteLocation);
 
     }
 
