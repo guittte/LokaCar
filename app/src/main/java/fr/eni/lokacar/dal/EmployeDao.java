@@ -29,10 +29,10 @@ public class EmployeDao {
     public long insert(Employe item){
 
         ContentValues cv = new ContentValues();
-        cv.put(EmployeContract.COL_NOM,item.getNomEmploye());
-        cv.put(EmployeContract.COL_PRENOM,item.getPrenomEmploye());
-        cv.put(EmployeContract.COL_EMAIL,item.getEmailEmploye());
-        cv.put(EmployeContract.COL_MOTDEPASSE,item.getMotDePasse());
+        cv.put(EmployeContract.COL_NOMEMPLOYE,item.getNomEmploye());
+        cv.put(EmployeContract.COL_PRENOMEMPLOYE,item.getPrenomEmploye());
+        cv.put(EmployeContract.COL_EMAILEMPLOYE,item.getEmailEmploye());
+        cv.put(EmployeContract.COL_MOTDEPASSEEMPLOYE,item.getMotDePasse());
 
 
 
@@ -51,25 +51,25 @@ public class EmployeDao {
                 connexion.query(
                         EmployeContract.TABLE_NAME,
                         new String[]{
-                                EmployeContract.COL_ID,
-                                EmployeContract.COL_NOM,
-                                EmployeContract.COL_PRENOM,
-                                EmployeContract.COL_EMAIL,
-                                EmployeContract.COL_MOTDEPASSE},
+                                EmployeContract.COL_IDEMPLOYE,
+                                EmployeContract.COL_NOMEMPLOYE,
+                                EmployeContract.COL_PRENOMEMPLOYE,
+                                EmployeContract.COL_EMAILEMPLOYE,
+                                EmployeContract.COL_MOTDEPASSEEMPLOYE},
                         null,
                         null,
                         null,
                         null,
-                        EmployeContract.COL_NOM);
+                        EmployeContract.COL_NOMEMPLOYE);
 
         while (resultatDeLaRequete.moveToNext()) {
 
             //on cree autant d'employes qu'il y a de lignes
             Employe employe = new Employe();
-            employe.setNomEmploye(resultatDeLaRequete.getString(EmployeContract.NUM_COL_NOM));
-            employe.setPrenomEmploye(resultatDeLaRequete.getString(EmployeContract.NUM_COL_PRENOM));
-            employe.setEmailEmploye(resultatDeLaRequete.getString(EmployeContract.NUM_COL_EMAIL));
-            employe.setMotDePasse(resultatDeLaRequete.getString(EmployeContract.NUM_COL_MOTDEPASSE));
+            employe.setNomEmploye(resultatDeLaRequete.getString(EmployeContract.NUM_COL_NOMEMPLOYE));
+            employe.setPrenomEmploye(resultatDeLaRequete.getString(EmployeContract.NUM_COL_PRENOMEMPLOYE));
+            employe.setEmailEmploye(resultatDeLaRequete.getString(EmployeContract.NUM_COL_EMAILEMPLOYE));
+            employe.setMotDePasse(resultatDeLaRequete.getString(EmployeContract.NUM_COL_MOTDEPASSEEMPLOYE));
 
 
             //on ajoute les employes nouvellement crees dans une liste

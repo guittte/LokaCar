@@ -51,7 +51,7 @@ public class LocationDao {
                 connexion.query(
                         LocationContract.TABLE_NAME,
                         new String[]{
-                                LocationContract.COL_ID,
+                                LocationContract.COL_IDLOCATION,
                                 LocationContract.COL_DATE_DEBUT,
                                 LocationContract.COL_DATE_FIN,
                                 LocationContract.COL_ETAT_ENTRANT,

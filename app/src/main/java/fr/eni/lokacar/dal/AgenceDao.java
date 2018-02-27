@@ -29,9 +29,9 @@ public class AgenceDao {
     public long insert(Agence item){
 
         ContentValues cv = new ContentValues();
-        cv.put(AgenceContract.COL_NOM,item.getNomAgence());
-        cv.put(AgenceContract.COL_VILLE,item.getVilleAgence());
-        cv.put(AgenceContract.COL_CODEPOSTAL,item.getCodePostalAgence());
+        cv.put(AgenceContract.COL_NOMAGENCE,item.getNomAgence());
+        cv.put(AgenceContract.COL_VILLEAGENCE,item.getVilleAgence());
+        cv.put(AgenceContract.COL_CODEPOSTALAGENCE,item.getCodePostalAgence());
 
         return connexion.insert(AgenceContract.TABLE_NAME, null, cv);
     }
@@ -48,23 +48,23 @@ public class AgenceDao {
                 connexion.query(
                         AgenceContract.TABLE_NAME,
                         new String[]{
-                                AgenceContract.COL_ID,
-                                AgenceContract.COL_NOM,
-                                AgenceContract.COL_VILLE,
-                                AgenceContract.COL_CODEPOSTAL},
+                                AgenceContract.COL_IDAGENCE,
+                                AgenceContract.COL_NOMAGENCE,
+                                AgenceContract.COL_VILLEAGENCE,
+                                AgenceContract.COL_CODEPOSTALAGENCE},
                         null,
                         null,
                         null,
                         null,
-                        AgenceContract.COL_NOM);
+                        AgenceContract.COL_NOMAGENCE);
 
         while (resultatDeLaRequete.moveToNext()) {
 
             //on cree autant d'agences qu'il y a de lignes
             Agence agence = new Agence();
-            agence.setNomAgence(resultatDeLaRequete.getString(AgenceContract.NUM_COL_NOM));
-            agence.setVilleAgence(resultatDeLaRequete.getString(AgenceContract.NUM_COL_VILLE));
-            agence.setCodePostalAgence(resultatDeLaRequete.getInt(AgenceContract.NUM_COL_CODEPOSTAL));
+            agence.setNomAgence(resultatDeLaRequete.getString(AgenceContract.NUM_COL_NOMAGENCE));
+            agence.setVilleAgence(resultatDeLaRequete.getString(AgenceContract.NUM_COL_VILLEAGENCE));
+            agence.setCodePostalAgence(resultatDeLaRequete.getInt(AgenceContract.NUM_COL_CODEPOSTALAGENCE));
 
 
             //on ajoute les agences nouvellement creees dans une liste

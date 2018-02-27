@@ -52,7 +52,7 @@ public class VehiculeDao {
                 connexion.query(
                         VehiculeContract.TABLE_NAME,
                         new String[]{
-                                VehiculeContract.COL_ID,
+                                VehiculeContract.COL_IDVEHICULE,
                                 VehiculeContract.COL_MARQUE,
                                 VehiculeContract.COL_MODELE,
                                 VehiculeContract.COL_DESCRIPTION,

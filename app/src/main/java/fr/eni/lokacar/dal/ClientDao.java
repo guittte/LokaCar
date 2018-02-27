@@ -29,13 +29,13 @@ public class ClientDao {
     public long insert(Client item){
 
         ContentValues cv = new ContentValues();
-        cv.put(ClientContract.COL_NOM,item.getNomClient());
-        cv.put(ClientContract.COL_PRENOM,item.getPrenomClient());
-        cv.put(ClientContract.COL_ADRESSE,item.getAdresseClient());
-        cv.put(ClientContract.COL_CODEPOSTAL,item.getCodePostalClient());
-        cv.put(ClientContract.COL_VILLE,item.getVilleClient());
-        cv.put(ClientContract.COL_TELEPHONE,item.getTelephoneClient());
-        cv.put(ClientContract.COL_EMAIL,item.getEmailClient());
+        cv.put(ClientContract.COL_NOMCLIENT,item.getNomClient());
+        cv.put(ClientContract.COL_PRENOMCLIENT,item.getPrenomClient());
+        cv.put(ClientContract.COL_ADRESSECLIENT,item.getAdresseClient());
+        cv.put(ClientContract.COL_CODEPOSTALCLIENT,item.getCodePostalClient());
+        cv.put(ClientContract.COL_VILLECLIENT,item.getVilleClient());
+        cv.put(ClientContract.COL_TELEPHONECLIENT,item.getTelephoneClient());
+        cv.put(ClientContract.COL_EMAILCLIENT,item.getEmailClient());
 
 
 
@@ -54,31 +54,31 @@ public class ClientDao {
                 connexion.query(
                         ClientContract.TABLE_NAME,
                         new String[]{
-                                ClientContract.COL_ID,
-                                ClientContract.COL_NOM,
-                                ClientContract.COL_PRENOM,
-                                ClientContract.COL_ADRESSE,
-                                ClientContract.COL_CODEPOSTAL,
-                                ClientContract.COL_VILLE,
-                                ClientContract.COL_TELEPHONE,
-                                ClientContract.COL_EMAIL},
+                                ClientContract.COL_IDCLIENT,
+                                ClientContract.COL_NOMCLIENT,
+                                ClientContract.COL_PRENOMCLIENT,
+                                ClientContract.COL_ADRESSECLIENT,
+                                ClientContract.COL_CODEPOSTALCLIENT,
+                                ClientContract.COL_VILLECLIENT,
+                                ClientContract.COL_TELEPHONECLIENT,
+                                ClientContract.COL_EMAILCLIENT},
                         null,
                         null,
                         null,
                         null,
-                        ClientContract.COL_NOM);
+                        ClientContract.COL_NOMCLIENT);
 
         while (resultatDeLaRequete.moveToNext()) {
 
             //on cree autant de clients qu'il y a de lignes
             Client client = new Client();
-            client.setNomClient(resultatDeLaRequete.getString(ClientContract.NUM_COL_NOM));
-            client.setPrenomClient(resultatDeLaRequete.getString(ClientContract.NUM_COL_PRENOM));
-            client.setAdresseClient(resultatDeLaRequete.getString(ClientContract.NUM_COL_ADRESSE));
-            client.setCodePostalClient(resultatDeLaRequete.getInt(ClientContract.NUM_COL_CODEPOSTAL));
-            client.setVilleClient(resultatDeLaRequete.getString(ClientContract.NUM_COL_VILLE));
-            client.setTelephoneClient(resultatDeLaRequete.getInt(ClientContract.NUM_COL_TELEPHONE));
-            client.setEmailClient(resultatDeLaRequete.getString(ClientContract.NUM_COL_EMAIL));
+            client.setNomClient(resultatDeLaRequete.getString(ClientContract.NUM_COL_NOMCLIENT));
+            client.setPrenomClient(resultatDeLaRequete.getString(ClientContract.NUM_COL_PRENOMCLIENT));
+            client.setAdresseClient(resultatDeLaRequete.getString(ClientContract.NUM_COL_ADRESSECLIENT));
+            client.setCodePostalClient(resultatDeLaRequete.getInt(ClientContract.NUM_COL_CODEPOSTALCLIENT));
+            client.setVilleClient(resultatDeLaRequete.getString(ClientContract.NUM_COL_VILLECLIENT));
+            client.setTelephoneClient(resultatDeLaRequete.getInt(ClientContract.NUM_COL_TELEPHONECLIENT));
+            client.setEmailClient(resultatDeLaRequete.getString(ClientContract.NUM_COL_EMAILCLIENT));
 
 
             //on ajoute les clients nouvellement crees dans une liste
