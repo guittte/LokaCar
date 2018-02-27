@@ -71,7 +71,7 @@ public class Vehicule {
         this.prix = prix;
     }
 
-    public long isLoue() {
+    public long getLoue() {
         return loue;
     }
 
