@@ -67,17 +67,17 @@ public class VehiculeDao {
 
         while (resultatDeLaRequete.moveToNext()) {
 
-            //on cree autant de Vehicules qu'il y a de lignes
+            //on cree autant de vehicules qu'il y a de lignes
             Vehicule vehicule = new Vehicule();
             vehicule.setMarque(resultatDeLaRequete.getString(VehiculeContract.NUM_COL_MARQUE));
             vehicule.setModele(resultatDeLaRequete.getString(VehiculeContract.NUM_COL_MODELE));
-            vehicule.setModele(resultatDeLaRequete.getString(VehiculeContract.NUM_COL_DESCRIPTION));
-            vehicule.setModele(resultatDeLaRequete.getString(VehiculeContract.NUM_COL_IMMATRICULATION));
-            vehicule.setModele(resultatDeLaRequete.getString(VehiculeContract.NUM_COL_PRIX));
-            vehicule.setModele(resultatDeLaRequete.getString(VehiculeContract.NUM_COL_LOUE));
+            vehicule.setDescription(resultatDeLaRequete.getString(VehiculeContract.NUM_COL_DESCRIPTION));
+            vehicule.setImmatriculation(resultatDeLaRequete.getString(VehiculeContract.NUM_COL_IMMATRICULATION));
+            vehicule.setPrix(resultatDeLaRequete.getFloat(VehiculeContract.NUM_COL_PRIX));
+            vehicule.setLoue(resultatDeLaRequete.getLong(VehiculeContract.NUM_COL_LOUE));
 
 
-            //on ajoute les Vehicules nouvellement crees dans une liste
+            //on ajoute les vehicules nouvellement crees dans une liste
             resultat.add(vehicule);
         }
         resultatDeLaRequete.close();
