@@ -2,9 +2,8 @@ package fr.eni.lokacar.activities;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
+import android.support.design.widget.Snackbar;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -12,16 +11,33 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ListView;
+
+import java.util.ArrayList;
 
 import fr.eni.lokacar.R;
+import fr.eni.lokacar.adapters.VehiculeAdapter;
+import fr.eni.lokacar.bo.Vehicule;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    private ArrayList<Vehicule> liste;
+    private ListView vehiculeListView;
+    private VehiculeAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //Creation de la liste
+        initList();
+        vehiculeListView = (ListView) findViewById(R.id.liste_vehicules);
+        adapter = new VehiculeAdapter(this,R.layout.presentation_lignes,liste);
+        vehiculeListView.setAdapter(adapter);
+
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -42,6 +58,29 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+
+
+/*
+        listeView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+                Vehicule vehicule = (Vehicule) adapterView.getItemAtPosition(i);
+
+                Intent intent = new Intent(ActivitListeArticle.this,MainActivity.class);
+                intent.putExtra("article",article);
+                startActivity(intent);
+            }
+        });*/
+    }
+
+    private void initList(){
+
+        liste = new ArrayList<>();
+        liste.add(new Vehicule(1,"Mercedes","A200","Etat neuf","930AA44",30.5f,1));
+        liste.add(new Vehicule(2,"BMW","123D","Etat neuf","930BB74",35.5f,1));
+        liste.add(new Vehicule(3,"Volkswagen","Golf","Etat neuf","847BC12",23.5f,1));
     }
 
     @Override

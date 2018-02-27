@@ -23,6 +23,7 @@
         android:layout_width = "match_parent"
         android:layout_height = "wrap_content"
         android:hint="@string/entrez_votre_email"
+        android:text="anais@eni.fr"
         android:layout_below="@id/tv_bienvenue"
         android:inputType="textEmailAddress" />
 
@@ -31,6 +32,7 @@
         android:layout_width = "match_parent"
         android:layout_height = "wrap_content"
         android:hint="@string/entrez_votre_mot_de_passe"
+        android:text="admin"
         android:layout_below="@id/et_email"
         android:inputType = "textPassword"
         />

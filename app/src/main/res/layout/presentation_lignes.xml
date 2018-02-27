@@ -7,7 +7,7 @@
     >
 
     <TextView
-        android:id="@+id/tv_ligne_nom_vehicule"
+        android:id="@+id/tv_ligne_marque_vehicule"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Mercedes"
@@ -18,11 +18,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="A200"
-        android:layout_below="@id/tv_ligne_nom_vehicule"
+        android:layout_below="@id/tv_ligne_marque_vehicule"
         />
 
     <TextView
-        android:id="@+id/tv_ligne_achat_article"
+        android:id="@+id/tv_ligne_etat_location"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Loué"
