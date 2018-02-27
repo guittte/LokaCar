@@ -219,7 +219,7 @@ public class GestionBdd extends SQLiteOpenHelper {
         //on supprime la table
         sqLiteDatabase.execSQL(requete);
 
-        //on la recree
+        //puis on la recree
         onCreate(sqLiteDatabase);
     }
 }
