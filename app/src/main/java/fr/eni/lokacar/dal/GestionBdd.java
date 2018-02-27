@@ -183,6 +183,14 @@ public class GestionBdd extends SQLiteOpenHelper {
                 " ( " +
                 LocationContract.COL_IDCLIENT +
                 " ) " +
+                LocationContract.COL_IDVEHICULE +
+                " INTEGER, FOREIGN KEY ( " +
+                LocationContract.COL_IDVEHICULE +
+                " ) REFERENCES " +
+                VehiculeContract.TABLE_NAME +
+                " ( " +
+                LocationContract.COL_IDVEHICULE +
+                " ) " +
                 ");";
 
         //on l'execute
