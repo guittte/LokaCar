@@ -78,4 +78,6 @@ public class LocationDao {
         resultatDeLaRequete.close();
         return resultat;
     }
+
+
 }

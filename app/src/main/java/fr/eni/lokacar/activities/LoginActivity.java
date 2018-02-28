@@ -1,6 +1,9 @@
 package fr.eni.lokacar.activities;
 
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -12,22 +15,26 @@ import fr.eni.lokacar.R;
 
 public class LoginActivity extends AppCompatActivity {
 
-    Button btn_login;
+    Button btnlogin;
     EditText et_email, et_mdp;
+    SQLiteOpenHelper dbhelper;
+    SQLiteDatabase db;
+    Cursor cursor;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-    }
+        }
 
     public void login(View view) {
-        btn_login = (Button) findViewById(R.id.btn_login);
+        btnlogin = (Button) findViewById(R.id.btn_login);
         et_email = (EditText) findViewById(R.id.et_email);
         et_mdp = (EditText) findViewById(R.id.et_mdp);
 
-        btn_login.setOnClickListener(new View.OnClickListener() {
+        btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (et_email.getText().toString().equals("anais@eni.fr") &&
@@ -44,4 +51,5 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 }
+
 

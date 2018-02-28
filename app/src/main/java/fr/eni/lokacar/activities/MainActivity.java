@@ -10,7 +10,15 @@ import java.util.ArrayList;
 
 import fr.eni.lokacar.R;
 import fr.eni.lokacar.adapters.VehiculeAdapter;
+import fr.eni.lokacar.bo.Agence;
+import fr.eni.lokacar.bo.Client;
+import fr.eni.lokacar.bo.Employe;
+import fr.eni.lokacar.bo.Location;
 import fr.eni.lokacar.bo.Vehicule;
+import fr.eni.lokacar.dal.AgenceDao;
+import fr.eni.lokacar.dal.ClientDao;
+import fr.eni.lokacar.dal.EmployeDao;
+import fr.eni.lokacar.dal.LocationDao;
 import fr.eni.lokacar.dal.VehiculeDao;
 
 public class MainActivity extends AppCompatActivity {
@@ -41,13 +49,56 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClickBtnInsertBdd(View view) {
+
+        Location location = new Location();
+        location.setDateDebutLocation("01/03/18");
+        location.setDateFinLocation("08/03/18");
+        location.setEtatLieuxEntrant("RAS");
+
+        LocationDao dao = new LocationDao(this);
+        Toast.makeText(MainActivity.this,"Resultat de l'insert : "
+                + dao.insert(location), Toast.LENGTH_SHORT).show();
+        /*
+        Client client = new Client();
+        client.setNomClient("Lambert");
+        client.setPrenomClient("Emilie");
+        client.setAdresseClient("pas loin de Beaulieu");
+        client.setCodePostalClient(44000);
+        client.setVilleClient("NantesCity");
+        client.setTelephoneClient(0201234567);
+        client.setEmailClient("emilie@eni.fr");
+
+        ClientDao dao = new ClientDao(this);
+        Toast.makeText(MainActivity.this,"Resultat de l'insert : "
+                + dao.insert(client), Toast.LENGTH_SHORT).show();
+
+        Employe employe = new Employe();
+        employe.setNomEmploye("Rousteau");
+        employe.setPrenomEmploye("Anais");
+        employe.setEmailEmploye("anais@eni.fr");
+        employe.setMotDePasse("gerant");
+
+        EmployeDao dao = new EmployeDao(this);
+        Toast.makeText(MainActivity.this,"Resultat de l'insert : "
+                + dao.insert(employe), Toast.LENGTH_SHORT).show();
+
+
+        Agence agence = new Agence();
+        agence.setNomAgence("Nantes Ouest");
+        agence.setVilleAgence("Saint Herblain");
+        agence.setCodePostalAgence(44800);
+
+        AgenceDao dao = new AgenceDao(this);
+        Toast.makeText(MainActivity.this,"Resultat de l'insert : "
+                + dao.insert(agence), Toast.LENGTH_SHORT).show();
+*/
+        /*
         Vehicule vehicule = new Vehicule();
-        //(1,"Mercedes","A200","Etat neuf","930AA44",30.5f,1)
-        vehicule.setMarque("seat");
-        vehicule.setModele("leon");
+        vehicule.setMarque("BMW");
+        vehicule.setModele("123D");
         vehicule.setDescription("Etat parfait");
-        vehicule.setImmatriculation("AA987CV");
-        vehicule.setPrix(17.5f);
+        vehicule.setImmatriculation("FD965PO");
+        vehicule.setPrix(35.5f);
         vehicule.setLoue(0);
 
         VehiculeDao dao = new VehiculeDao(this);
@@ -56,6 +107,11 @@ public class MainActivity extends AppCompatActivity {
 
         Intent intention = new Intent(this, AjoutVehiculeActivity.class);
         startActivity(intention);
+                                    AgenceContract.COL_IDAGENCE,
+                                AgenceContract.COL_NOMAGENCE,
+                                AgenceContract.COL_VILLEAGENCE,
+                                AgenceContract.COL_CODEPOSTALAGENCE},
+        */
 
     }
 
