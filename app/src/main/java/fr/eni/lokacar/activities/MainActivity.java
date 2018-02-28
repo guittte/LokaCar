@@ -1,5 +1,6 @@
 package fr.eni.lokacar.activities;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -52,6 +53,9 @@ public class MainActivity extends AppCompatActivity {
         VehiculeDao dao = new VehiculeDao(this);
         Toast.makeText(MainActivity.this,"Resultat de l'insert : "
                 + dao.insert(vehicule), Toast.LENGTH_SHORT).show();
+
+        Intent intention = new Intent(this, AjoutVehiculeActivity.class);
+        startActivity(intention);
 
     }
 

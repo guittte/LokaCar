@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="fr.eni.lokacar.activities.AjoutVehiculeActivity">
+
+    <TextView
+        android:id="@+id/tv_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salut toi qui a cliqué sur ce bouton sexy !"/>
+
+    <EditText
+        android:id="@+id/et_ajout_marque"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/marque_du_v_hicule"
+        android:layout_below="@id/tv_test"/>
+
+    <EditText
+        android:id="@+id/et_ajout_modele"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/mod_le"
+        android:layout_below="@id/et_ajout_marque"/>
+
+    <EditText
+        android:id="@+id/et_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/description_du_v_hicule"
+        android:layout_below="@id/et_ajout_modele"/>
+
+    <EditText
+        android:id="@+id/et_immatriculation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/immatriculation"
+        android:layout_below="@id/et_description"/>
+
+    <EditText
+        android:id="@+id/et_tarif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/tarif_journalier"
+        android:layout_below="@id/et_immatriculation"/>
+
+    <Button
+        android:id="@+id/btn_ajout_vehicule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/ajouter"
+        />
+
+</RelativeLayout>
+
