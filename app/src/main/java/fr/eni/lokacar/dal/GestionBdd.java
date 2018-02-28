@@ -182,7 +182,7 @@ public class GestionBdd extends SQLiteOpenHelper {
                 ClientContract.TABLE_NAME +
                 " ( " +
                 LocationContract.COL_IDCLIENT +
-                " ) " +
+                " ), " +
                 LocationContract.COL_IDVEHICULE +
                 " INTEGER, FOREIGN KEY ( " +
                 LocationContract.COL_IDVEHICULE +
