@@ -33,4 +33,5 @@
     <string name="immatriculation">Immatriculation</string>
     <string name="tarif_journalier">Tarif journalier</string>
     <string name="ajouter">Ajouter</string>
+    <string name="inserer">Inserer</string>
 </resources>
