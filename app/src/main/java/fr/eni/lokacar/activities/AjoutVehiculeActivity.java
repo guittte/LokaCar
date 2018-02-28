@@ -53,4 +53,7 @@ public class AjoutVehiculeActivity extends AppCompatActivity {
         Intent intention = new Intent(this, MainActivity.class);
         startActivity(intention);
     }
+
+    public void onClickBtnSuppBdd(View view) {
+    }
 }
