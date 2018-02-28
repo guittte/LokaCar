@@ -182,14 +182,6 @@ public class GestionBdd extends SQLiteOpenHelper {
                 ClientContract.TABLE_NAME +
                 " ( " +
                 LocationContract.COL_IDCLIENT +
-                " ), " +
-                LocationContract.COL_IDVEHICULE +
-                " INTEGER, FOREIGN KEY ( " +
-                LocationContract.COL_IDVEHICULE +
-                " ) REFERENCES " +
-                VehiculeContract.TABLE_NAME +
-                " ( " +
-                LocationContract.COL_IDVEHICULE +
                 " ) " +
                 ");";
 
@@ -200,6 +192,26 @@ public class GestionBdd extends SQLiteOpenHelper {
 
         //on met un log car il est facile de faire des erreurs a cet endroit
         Log.d(TAG, "Creation table location : " + requeteLocation);
+
+        String requeteForeignKey =
+                //creation deuxieme foreign key dans la table location
+                LocationContract.COL_IDVEHICULE +
+                        " INTEGER, FOREIGN KEY ( " +
+                        LocationContract.COL_IDVEHICULE +
+                        " ) REFERENCES " +
+                        VehiculeContract.TABLE_NAME +
+                        " ( " +
+                        LocationContract.COL_IDVEHICULE +
+                        " ) " +
+                        ");";
+
+        Log.d(TAG, " requeteForeign : " + requeteForeignKey);
+
+        //on l'execute
+        sqLiteDatabase.execSQL(requeteForeignKey);
+
+        //on met un log car il est facile de faire des erreurs a cet endroit
+        Log.d(TAG, "Creation deuxieme foreign key dans la table location : " + requeteForeignKey);
 
     }
 
