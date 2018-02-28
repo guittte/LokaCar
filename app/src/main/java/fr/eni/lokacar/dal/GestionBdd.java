@@ -102,7 +102,7 @@ public class GestionBdd extends SQLiteOpenHelper {
                 VehiculeContract.COL_PRIX +
                 " REAl, " +
                 VehiculeContract.COL_LOUE +
-                " INTEGER " +
+                " INTEGER, " +
                 VehiculeContract.COL_IDAGENCE +
                 " INTEGER, FOREIGN KEY ( " +
                 VehiculeContract.COL_IDAGENCE +
@@ -141,7 +141,7 @@ public class GestionBdd extends SQLiteOpenHelper {
                 ClientContract.COL_TELEPHONECLIENT +
                 " INTEGER, " +
                 ClientContract.COL_EMAILCLIENT +
-                " TEXT " +
+                " TEXT, " +
                 ClientContract.COL_IDVEHICULE +
                 " INTEGER, FOREIGN KEY ( " +
                 ClientContract.COL_IDVEHICULE +
