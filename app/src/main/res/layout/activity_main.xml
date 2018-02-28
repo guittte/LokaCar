@@ -13,7 +13,9 @@
     <ListView
         android:id="@+id/liste_vehicules"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></ListView>
+        android:layout_height="match_parent"
+        android:background="#435058"
+        />
 
     <Button
         android:id="@+id/btnInsertBdd"
@@ -22,7 +24,7 @@
         android:layout_centerHorizontal="true"
         android:layout_alignBottom="@+id/liste_vehicules"
         android:layout_alignParentEnd="true"
-        android:text="Inserer"
+        android:text="@string/inserer"
         android:onClick="onClickBtnInsertBdd"
         />
 

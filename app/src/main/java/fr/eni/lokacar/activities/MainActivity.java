@@ -1,10 +1,13 @@
 package fr.eni.lokacar.activities;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ListView;
+import android.widget.Toast;
+
 import java.util.ArrayList;
 
 import fr.eni.lokacar.R;
@@ -33,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void onClickBtnInsertBdd(View view) {
+    public void onClickBtnAjoutVehicule(View view) {
 
         /*Location location = new Location();
         location.setDateDebutLocation("01/03/18");
@@ -77,19 +80,20 @@ public class MainActivity extends AppCompatActivity {
                 + dao.insert(employe), Toast.LENGTH_SHORT).show();
 
         Vehicule vehicule = new Vehicule();
-        vehicule.setMarque("Peugeot");
-        vehicule.setModele("106");
-        vehicule.setDescription("Etat fonctionnel");
-        vehicule.setImmatriculation("AA189FV");
-        vehicule.setPrix(5.5f);
+        vehicule.setMarque("Renault");
+        vehicule.setModele("Twingo");
+        vehicule.setDescription("Couleur aubergine");
+        vehicule.setImmatriculation("9616YY44");
+        vehicule.setPrix(8.5f);
         vehicule.setLoue(0);
+
 
         VehiculeDao dao = new VehiculeDao(this);
         Toast.makeText(MainActivity.this,"Resultat de l'insert : "
                 + dao.insert(vehicule), Toast.LENGTH_SHORT).show();
-
+*/
         Intent intention = new Intent(this, AjoutVehiculeActivity.class);
-        startActivity(intention);*/
+        startActivity(intention);
 
     }
 

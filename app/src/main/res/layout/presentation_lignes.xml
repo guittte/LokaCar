@@ -5,29 +5,42 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     >
+    <ImageView
+        android:contentDescription="row"
+        android:id="@+id/icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/ic_menu_gallery" >
+    </ImageView>
 
     <TextView
         android:id="@+id/tv_ligne_marque_vehicule"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:text="Mercedes"
-        />
+        android:layout_below="@+id/tv_ligne_etat_location"
+        android:layout_toEndOf="@+id/icon" />
 
     <TextView
         android:id="@+id/tv_ligne_modele"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="A200"
-        android:layout_below="@id/tv_ligne_marque_vehicule"
-        />
+        android:layout_below="@+id/tv_ligne_marque_vehicule"
+        android:layout_alignStart="@+id/tv_ligne_marque_vehicule" />
 
     <TextView
         android:id="@+id/tv_ligne_etat_location"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Loué"
-        android:layout_alignParentEnd="true"
-        />
+        android:layout_alignTop="@+id/icon"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
 
