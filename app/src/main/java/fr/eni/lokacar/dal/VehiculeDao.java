@@ -20,6 +20,7 @@ public class VehiculeDao {
         connexion = gestionBdd.getWritableDatabase();
     }
 
+
     /**
      * CREATE
      * permet d'inserer un vehicule dans la bdd
@@ -44,7 +45,7 @@ public class VehiculeDao {
      * READ
      * @return resultat
      */
-    public ArrayList<Vehicule> get(){
+    public ArrayList<Vehicule> getListVehicule(){
 
         ArrayList<Vehicule> resultat = new ArrayList<Vehicule>();
 
