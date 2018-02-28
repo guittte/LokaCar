@@ -193,6 +193,8 @@ public class GestionBdd extends SQLiteOpenHelper {
                 " ) " +
                 ");";
 
+        Log.d(TAG, " requete : " + requeteLocation);
+
         //on l'execute
         sqLiteDatabase.execSQL(requeteLocation);
 
