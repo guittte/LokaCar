@@ -9,4 +9,65 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="fr.eni.lokacar.activities.DetailVehiculeActivity">
 
+
+    <TextView
+        android:id="@+id/tv_titre_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/d_tail_de_votre_v_hicule"
+        android:textStyle="bold"
+        android:textSize="27sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_marque"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/marque_du_v_hicule_detail"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_below="@id/tv_titre_detail"
+        />
+
+    <TextView
+        android:id="@+id/tv_modele"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mod_le_du_v_hicule"
+        android:layout_below="@id/tv_marque"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/description_du_v_hicule_detail"
+        android:layout_below="@id/tv_modele"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_immatriculation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/immatriculation_du_v_hicule"
+        android:layout_below="@id/tv_description"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_prix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tarif_journalier_detail"
+        android:layout_below="@id/tv_immatriculation"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        />
+
+
 </RelativeLayout>
