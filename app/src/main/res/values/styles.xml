@@ -6,6 +6,13 @@
         <item name="colorPrimary">#848c8e</item>
         <item name="colorPrimaryDark">#435058</item>
         <item name="colorAccent">#dcf763</item>
+        <item name="android:backgroundTint">#435058</item>
+        <item name="android:textColor">#f1f2ee</item>
+    </style>
+
+    <style name="buttonstyle" >
+        <item name="android:textColor" >#dcf763</item>
+        <item name="android:backgroundTint">#848c8e</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
