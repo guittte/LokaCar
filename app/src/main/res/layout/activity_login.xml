@@ -39,6 +39,7 @@
         android:text="anais@eni.fr"
         android:layout_below="@id/imageLogin"
         android:inputType="textEmailAddress"
+        android:backgroundTint="#bfb7b6"
         />
 
     <EditText
@@ -49,6 +50,7 @@
         android:text="admin"
         android:layout_below="@id/et_email"
         android:inputType = "textPassword"
+        android:backgroundTint="#bfb7b6"
         />
 
     <Button
