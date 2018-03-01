@@ -1,9 +1,9 @@
 package fr.eni.lokacar.activities;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.widget.RatingBar;
+import android.view.View;
 import android.widget.TextView;
 
 import fr.eni.lokacar.R;
@@ -23,18 +23,22 @@ public class DetailVehiculeActivity extends AppCompatActivity {
         TextView tvModele = (TextView) findViewById(R.id.tv_modele);
         tvModele.setText(vehicule.getModele());
 
+        TextView tvImmatriculation = (TextView) findViewById(R.id.tv_immatriculation);
+        tvImmatriculation.setText(vehicule.getImmatriculation());
+
         TextView tvDescription = (TextView) findViewById(R.id.tv_description);
         tvDescription.setText(vehicule.getDescription());
-
-        TextView tvImmatriculation = (TextView) findViewById(R.id.tv_immatriculation);
-        tvDescription.setText(vehicule.getImmatriculation());
 
         TextView tvPrix = (TextView) findViewById(R.id.tv_prix);
         tvPrix.setText(String.valueOf(vehicule.getPrix()));
 
+        Log.e("GGO","DetailVehiculeActivity"+ vehicule);
 
 
     }
 
 
+    public void onClickBtnSuppBdd(View view) {
+
+    }
 }

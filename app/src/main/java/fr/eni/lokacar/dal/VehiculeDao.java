@@ -84,4 +84,15 @@ public class VehiculeDao {
         resultatDeLaRequete.close();
         return resultat;
     }
+
+    public int deleteById (int idVehicule) {
+        return connexion.delete(VehiculeContract.TABLE_NAME,VehiculeContract.COL_IDVEHICULE+" LIKE ?",null);
+    }
+/*
+    public void delete(String user_name,SQLiteDatabase sqLiteDatabase){
+        String selection = UserContract.NewUserInfo.USER_NAME+" LIKE ?";
+        String[] seletion_args={user_name};
+        sqLiteDatabase.delete(UserContract.NewUserInfo.TABLE_NAME,selection,seletion_args);
+
+    }*/
 }
