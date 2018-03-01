@@ -32,7 +32,7 @@ public class AjoutVehiculeActivity extends AppCompatActivity {
 
         //mettre les valeurs de l'ihm récuperees dans des variables
         String marque = etMarque.getText().toString();
-        String modele = etMarque.getText().toString();
+        String modele = etModele.getText().toString();
         String description = etMarque.getText().toString();
         String immatriculation = etMarque.getText().toString();
         Float tarif = Float.valueOf(etTarif.getText().toString());
