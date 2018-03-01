@@ -29,6 +29,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //met l'icone a cote devant le nom de l'application
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setIcon(R.drawable.rentalicon32);
+
         //Creation de la liste
         VehiculeDao dao = new VehiculeDao(this);
         ArrayList<Vehicule> liste = dao.getListVehicule();

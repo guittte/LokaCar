@@ -27,6 +27,9 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        //met l'icone a cote devant le nom de l'application
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setIcon(R.drawable.rentalicon32);
         }
 
     public void login(View view) {
