@@ -36,12 +36,10 @@
     <string name="inserer">Inserer</string>
     <string name="ajouter_un_v_icule">Ajouter un véhicule</string>
     <string name="supprimer">Supprimer</string>
-<<<<<<< Updated upstream
     <string name="detail">Détail du véhicule</string>
     <string name="ajout">Ajouter un véhicule</string>
     <string name="liste">Liste des véhicules</string>
     <string name="bienvenue">Bienvenue</string>
-=======
     <string name="marque_du_v_hicule_detail">Marque du véhicule :</string>
     <string name="mod_le_du_v_hicule">Modèle du véhicule :</string>
     <string name="description_du_v_hicule_detail">Description du véhicule :</string>
@@ -49,5 +47,4 @@
     <string name="tarif_journalier_detail">Tarif journalier :</string>
     <string name="d_tail_de_votre_v_hicule">Détail de votre véhicule :</string>
     <string name="supprimer_ce_v_hicule">Supprimer ce véhicule</string>
->>>>>>> Stashed changes
 </resources>
