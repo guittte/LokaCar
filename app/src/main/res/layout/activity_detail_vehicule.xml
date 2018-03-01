@@ -69,5 +69,15 @@
         android:textSize="18sp"
         />
 
+    <Button
+        android:id="@+id/btn_supp_vehicule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/supprimer_ce_v_hicule"
+        android:onClick="onClickBtnSuppBdd"
+        />
+
+
 
 </RelativeLayout>
