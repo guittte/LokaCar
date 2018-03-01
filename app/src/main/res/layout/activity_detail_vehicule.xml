@@ -76,6 +76,7 @@
         android:layout_alignParentBottom="true"
         android:text="@string/supprimer_ce_v_hicule"
         android:onClick="onClickBtnSuppBdd"
+        style="@style/buttonstyle"
         />
 
 
