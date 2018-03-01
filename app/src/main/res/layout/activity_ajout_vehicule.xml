@@ -58,6 +58,7 @@
         android:layout_alignParentBottom="true"
         android:text="@string/ajouter"
         android:onClick="onClickBtnInsertBdd"
+        style="@style/buttonstyle"
         />
 
 </RelativeLayout>

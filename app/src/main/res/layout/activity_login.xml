@@ -43,6 +43,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/et_mdp"
         android:text="@string/se_connecter"
-        android:onClick="login"/>
+        android:onClick="login"
+        style="@style/buttonstyle"
+        />
 
 </RelativeLayout>

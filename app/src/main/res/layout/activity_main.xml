@@ -25,6 +25,7 @@
         android:layout_alignParentEnd="true"
         android:text="@string/ajouter_un_v_icule"
         android:onClick="onClickBtnAjoutVehicule"
+        style="@style/buttonstyle"
         />
 
 
