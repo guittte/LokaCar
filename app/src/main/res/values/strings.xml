@@ -47,4 +47,7 @@
     <string name="tarif_journalier_detail">Tarif journalier :</string>
     <string name="d_tail_de_votre_v_hicule">Détail de votre véhicule :</string>
     <string name="supprimer_ce_v_hicule">Supprimer ce véhicule</string>
+    <string name="icone_accueil_vehicules">Accueil véhicules</string>
+    <string name="icone_accueil_clients">Accueil clients</string>
+    <string name="menu_se_deconnecter">Se déconnecter</string>
 </resources>
