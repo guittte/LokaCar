@@ -32,9 +32,11 @@
         <activity
             android:name=".activities.MainActivity"
             android:label="@string/title_activity_main"/>
-        <activity android:name=".activities.AjoutVehiculeActivity">
+        <activity android:name=".activities.AjoutVehiculeActivity"></activity>
+        <activity android:name=".activities.DetailVehiculeActivity"></activity>
 
-        </activity>
+
+
     </application>
 
 </manifest>

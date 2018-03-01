@@ -4,7 +4,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -34,11 +36,34 @@ public class MainActivity extends AppCompatActivity {
         VehiculeAdapter adapter = new VehiculeAdapter(this, R.layout.presentation_lignes, liste);
         vehiculeListView.setAdapter(adapter);
 
+        vehiculeListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+                Vehicule vehicule = (Vehicule) adapterView.getItemAtPosition(i);
+
+                Intent intent = new Intent(MainActivity.this,DetailVehiculeActivity.class);
+                intent.putExtra("vehicule",vehicule);
+                startActivity(intent);
+            }
+        });
     }
+
+
 
     public void onClickBtnAjoutVehicule(View view) {
 
-        /*Location location = new Location();
+                Intent intention = new Intent(this, AjoutVehiculeActivity.class);
+                startActivity(intention);
+
+            }
+
+
+        }
+
+
+
+/*Location location = new Location();
         location.setDateDebutLocation("01/03/18");
         location.setDateFinLocation("08/03/18");
         location.setEtatLieuxEntrant("RAS");
@@ -92,22 +117,3 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(MainActivity.this,"Resultat de l'insert : "
                 + dao.insert(vehicule), Toast.LENGTH_SHORT).show();
 */
-        Intent intention = new Intent(this, AjoutVehiculeActivity.class);
-        startActivity(intention);
-
-    }
-
-    /*
-        listeView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-
-                Vehicule vehicule = (Vehicule) adapterView.getItemAtPosition(i);
-
-                Intent intent = new Intent(ActivitListeArticle.this,MainActivity.class);
-                intent.putExtra("article",article);
-                startActivity(intent);
-            }
-        });*/
-}
-
