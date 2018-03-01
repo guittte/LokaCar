@@ -16,6 +16,19 @@
         android:layout_height="wrap_content"
         android:text="@string/bienvenue_chez_lokacar"
         android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:paddingBottom="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/key"
+        android:layout_below="@+id/tv_bienvenue"
+        android:paddingBottom="20dp"
         />
 
     <EditText
@@ -24,8 +37,9 @@
         android:layout_height = "wrap_content"
         android:hint="@string/entrez_votre_email"
         android:text="anais@eni.fr"
-        android:layout_below="@id/tv_bienvenue"
-        android:inputType="textEmailAddress" />
+        android:layout_below="@id/imageLogin"
+        android:inputType="textEmailAddress"
+        />
 
     <EditText
         android:id = "@+id/et_mdp"
