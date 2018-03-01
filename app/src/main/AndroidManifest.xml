@@ -8,7 +8,10 @@
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
-    <uses-feature android:name="android.hardware.camera" android:required="true" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
 
     <application
         android:allowBackup="true"
@@ -31,20 +34,14 @@
         </activity>
         <activity
             android:name=".activities.MainActivity"
-            android:label="@string/liste"/>
-
+            android:label="@string/liste" />
         <activity
             android:name=".activities.AjoutVehiculeActivity"
-            android:label="@string/ajout"
-            />
-
+            android:label="@string/ajout" />
         <activity
             android:name=".activities.DetailVehiculeActivity"
-            android:label="@string/detail"
-            />
-
-
-
+            android:label="@string/detail" />
+        <activity android:name=".activities.ListeClientActivity"></activity>
     </application>
 
 </manifest>

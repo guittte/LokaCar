@@ -18,6 +18,11 @@ public class DetailVehiculeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_vehicule);
+
+        //met l'icone a cote devant le nom de l'application
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setIcon(R.drawable.rentalicon32);
+
         Vehicule vehicule = getIntent().getParcelableExtra("vehicule");
 
         TextView tvMarque = (TextView) findViewById(R.id.tv_marque);
