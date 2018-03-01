@@ -74,11 +74,11 @@ public class MainActivity extends AppCompatActivity {
         Intent intention = new Intent(getApplicationContext(), MainActivity.class);
         startActivity(intention);
     }
-/*
+
     private void menuclient(){
-        Intent intention = new Intent(getApplicationContext(), SearchActivity.class);
+        Intent intention = new Intent(getApplicationContext(),ListeClientActivity.class);
         startActivity(intention);
-    }*/
+
 
     private void deconnexion(){
         Intent intention = new Intent(getApplicationContext(), LoginActivity.class);
@@ -93,9 +93,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.it_menu_voiture:
                 menuVehicule();
                 break;
-            /*case R.id.it_menu_client:
+            case R.id.it_menu_client:
                 menuclient();
-                break;*/
+                break;
             case R.id.it_menu_login:
                 deconnexion();
                 break;
