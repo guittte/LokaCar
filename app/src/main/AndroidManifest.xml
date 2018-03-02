@@ -47,7 +47,9 @@
         <activity
             android:name=".activities.DetailClientActivity"
             android:label="@string/détailduclient" />
-        <activity android:name=".activities.AjoutClientActivity"></activity>
+        <activity android:name=".activities.AjoutClientActivity"
+            android:label="@string/ajoutclient"
+            />
     </application>
 
 </manifest>

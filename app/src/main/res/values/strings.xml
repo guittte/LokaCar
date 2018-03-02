@@ -74,4 +74,5 @@
     <string name="description">Description :</string>
     <string name="mod_leaffich">Modèle :</string>
     <string name="marque">Marque :</string>
+    <string name="ajoutclient">Ajouter un client</string>
 </resources>
