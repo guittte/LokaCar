@@ -40,9 +40,6 @@ public class DetailVehiculeActivity extends AppCompatActivity {
         TextView tvPrix = (TextView) findViewById(R.id.tv_prix);
         tvPrix.setText(String.valueOf(vehicule.getPrix()));
 
-        Log.e("GGO","DetailVehiculeActivity"+ vehicule);
-
-
     }
 
 

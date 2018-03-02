@@ -24,8 +24,6 @@ public class DetailClientActivity extends AppCompatActivity {
 
         Client client = getIntent().getParcelableExtra("client");
 
-        Log.i("DetailClientActivity", " on create " + client);
-
         TextView tvNom = (TextView) findViewById(R.id.tv_nom);
         tvNom.setText(client.getNomClient());
 
@@ -46,8 +44,6 @@ public class DetailClientActivity extends AppCompatActivity {
 
         TextView tvVille = (TextView) findViewById(R.id.tv_ville);
         tvVille.setText(client.getVilleClient());
-
-        Log.e("ARO","DetailClientActivity"+ client);
 
     }
 

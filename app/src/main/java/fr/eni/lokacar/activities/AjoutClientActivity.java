@@ -60,8 +60,6 @@ public class AjoutClientActivity extends AppCompatActivity {
         client.setTelephoneClient(telephone);
         client.setEmailClient(email);
 
-        Log.e("GGO", "insert client" +client);
-
         ClientDao dao = new ClientDao(this);
         long id = dao.insert(client);
 
