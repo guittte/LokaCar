@@ -16,7 +16,9 @@
         android:layout_height="wrap_content"
         android:text="Prenom"
         android:layout_below="@+id/tv_ligne_nom_client"
-        android:layout_alignStart="@+id/tv_ligne_nom_client" />
+        android:layout_alignStart="@+id/tv_ligne_nom_client"
+        android:layout_marginBottom="10dp"
+        />
 
 
 </RelativeLayout>
