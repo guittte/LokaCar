@@ -41,12 +41,13 @@
         <activity
             android:name=".activities.DetailVehiculeActivity"
             android:label="@string/detail" />
-        <activity android:name=".activities.ListeClientActivity"
-            android:label="@string/listeclients"
-            />
-        <activity android:name=".activities.DetailClientActivity"
-            android:label="@string/détailduclient"
-            />
+        <activity
+            android:name=".activities.ListeClientActivity"
+            android:label="@string/listeclients" />
+        <activity
+            android:name=".activities.DetailClientActivity"
+            android:label="@string/détailduclient" />
+        <activity android:name=".activities.AjoutClientActivity"></activity>
     </application>
 
 </manifest>

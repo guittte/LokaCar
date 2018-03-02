@@ -93,4 +93,10 @@ public class ListeClientActivity extends AppCompatActivity {
         }
         return true;
     }
+
+    public void onClickBtnAjoutClient(View view) {
+        Intent intention = new Intent(getApplicationContext(), AjoutClientActivity.class);
+        startActivity(intention);
+
+    }
 }

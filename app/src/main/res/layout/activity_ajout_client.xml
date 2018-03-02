@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="fr.eni.lokacar.activities.AjoutClientActivity">
+
+    <TextView
+        android:id="@+id/tv_titre_ajout_client"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ajouter un nouveau client : "
+        android:textSize="25dp"/>
+
+    <EditText
+        android:id="@+id/et_ajout_nom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nom"
+        android:layout_below="@id/tv_titre_ajout_client"/>
+
+    <EditText
+        android:id="@+id/et_ajout_prenom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Prénom"
+        android:layout_below="@id/et_ajout_nom"/>
+
+    <EditText
+        android:id="@+id/et_ajout_adresse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Adresse"
+        android:layout_below="@id/et_ajout_prenom"/>
+    
+    <EditText
+        android:id="@+id/et_ajout_codepostal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Code postal"
+        android:layout_below="@id/et_ajout_adresse"/>
+
+    <EditText
+        android:id="@+id/et_ajout_ville"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ville"
+        android:layout_below="@id/et_ajout_codepostal"/>
+
+    <EditText
+        android:id="@+id/et_ajout_telephone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Numéro de téléphone"
+        android:layout_below="@id/et_ajout_ville"/>
+
+    <EditText
+        android:id="@+id/et_ajout_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Adresse e-mail"
+        android:layout_below="@id/et_ajout_telephone"/>
+
+    <Button
+        android:id="@+id/btn_ajout_client"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/ajouter"
+        android:onClick="onClickBtnInsertclientBdd"
+        style="@style/buttonstyle"
+        />
+
+</RelativeLayout>
