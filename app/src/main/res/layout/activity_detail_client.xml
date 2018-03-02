@@ -20,13 +20,31 @@
         />
 
     <TextView
+        android:id="@+id/affiche_nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nom : "
+        android:layout_below="@+id/tv_client_detail"
+        android:textColor="#dcf763"
+        />
+
+    <TextView
         android:id="@+id/tv_nom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/nom"
         android:textStyle="bold"
         android:textSize="18sp"
-        android:layout_below="@id/tv_client_detail"
+        android:layout_below="@id/affiche_nom"
+        />
+
+    <TextView
+        android:id="@+id/affiche_prenom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prenom : "
+        android:layout_below="@+id/tv_nom"
+        android:textColor="#dcf763"
         />
 
     <TextView
@@ -34,9 +52,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/pr_nom"
-        android:layout_below="@id/tv_nom"
+        android:layout_below="@id/affiche_prenom"
         android:textStyle="bold"
         android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/affiche_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Téléphone : "
+        android:layout_below="@+id/tv_prenom"
+        android:textColor="#dcf763"
         />
 
     <TextView
@@ -44,9 +71,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/num_ro_de_t_l_phone"
-        android:layout_below="@id/tv_prenom"
+        android:layout_below="@id/affiche_tel"
         android:textStyle="bold"
         android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/affiche_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email : "
+        android:layout_below="@+id/tv_telephone"
+        android:textColor="#dcf763"
         />
 
     <TextView
@@ -54,9 +90,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/email"
-        android:layout_below="@id/tv_telephone"
+        android:layout_below="@id/affiche_email"
         android:textStyle="bold"
         android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/affiche_adresse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adresse : "
+        android:layout_below="@+id/tv_email"
+        android:textColor="#dcf763"
         />
 
     <TextView
@@ -64,9 +109,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/adresse"
-        android:layout_below="@id/tv_email"
+        android:layout_below="@id/affiche_adresse"
         android:textStyle="bold"
         android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/affiche_cp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Code postal : "
+        android:layout_below="@+id/tv_adresse"
+        android:textColor="#dcf763"
         />
 
     <TextView
@@ -74,9 +128,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/cp"
-        android:layout_below="@id/tv_adresse"
+        android:layout_below="@id/affiche_cp"
         android:textStyle="bold"
         android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/affiche_ville"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ville : "
+        android:layout_below="@+id/tv_codepostal"
+        android:textColor="#dcf763"
         />
 
     <TextView
@@ -84,7 +147,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/ville"
-        android:layout_below="@id/tv_codepostal"
+        android:layout_below="@id/affiche_ville"
         android:textStyle="bold"
         android:textSize="18sp"
         />
