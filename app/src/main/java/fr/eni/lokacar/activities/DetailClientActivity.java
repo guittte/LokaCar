@@ -21,20 +21,26 @@ public class DetailClientActivity extends AppCompatActivity {
 
         Client client = getIntent().getParcelableExtra("client");
 
-        TextView tvMarque = (TextView) findViewById(R.id.tv_marque);
-        tvMarque.setText(client.getMarque());
+        TextView tvNom = (TextView) findViewById(R.id.tv_nom);
+        tvNom.setText(client.getNomClient());
 
-        TextView tvModele = (TextView) findViewById(R.id.tv_modele);
-        tvModele.setText(client.getModele());
+        TextView tvPrenom = (TextView) findViewById(R.id.tv_prenom);
+        tvPrenom.setText(client.getPrenomClient());
 
-        TextView tvImmatriculation = (TextView) findViewById(R.id.tv_immatriculation);
-        tvImmatriculation.setText(client.getImmatriculation());
+        TextView tvTel = (TextView) findViewById(R.id.tv_telephone);
+        tvTel.setText(client.getTelephoneClient());
 
-        TextView tvDescription = (TextView) findViewById(R.id.tv_description);
-        tvDescription.setText(client.getDescription());
+        TextView tvEmail = (TextView) findViewById(R.id.tv_email);
+        tvEmail.setText(client.getEmailClient());
 
-        TextView tvPrix = (TextView) findViewById(R.id.tv_prix);
-        tvPrix.setText(String.valueOf(client.getPrix()));
+        TextView tvAdresse = (TextView) findViewById(R.id.tv_adresse);
+        tvAdresse.setText(String.valueOf(client.getAdresseClient()));
+
+        TextView tvCp = (TextView) findViewById(R.id.tv_codepostal);
+        tvCp.setText(String.valueOf(client.getCodePostalClient()));
+
+        TextView tvVille = (TextView) findViewById(R.id.tv_ville);
+        tvVille.setText(String.valueOf(client.getVilleClient()));
 
         Log.e("ARO","DetailClientActivity"+ client);
 

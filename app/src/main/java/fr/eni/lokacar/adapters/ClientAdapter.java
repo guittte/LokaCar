@@ -5,6 +5,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import java.util.List;
@@ -12,7 +13,7 @@ import java.util.List;
 import fr.eni.lokacar.R;
 import fr.eni.lokacar.bo.Client;
 
-public class ClientAdapter {
+public class ClientAdapter extends ArrayAdapter<Client> {
 
     private int presentation_lignes_client;
     private List<Client> liste;
@@ -37,12 +38,12 @@ public class ClientAdapter {
             if (client != null){
                 //Dans la view il y a des textviews
                 //Je recupere ces textview sous forme d'objet
-                final TextView marque = (TextView) convertView.findViewById(R.id.tv_ligne_marque_vehicule);
-                final TextView modele = (TextView) convertView.findViewById(R.id.tv_ligne_modele);
+                final TextView marque = (TextView) convertView.findViewById(R.id.tv_ligne_nom_client);
+                final TextView modele = (TextView) convertView.findViewById(R.id.tv_ligne_prenom);
 
                 //Je remplis la ligne
-                marque.setText(client.getMarque());
-                modele.setText(client.getModele());
+                marque.setText(client.getNomClient());
+                modele.setText(client.getPrenomClient());
             }
         }
         //Et je la retourne

@@ -48,4 +48,13 @@
     <string name="d_tail_de_votre_v_hicule">Détail de votre véhicule :</string>
     <string name="supprimer_ce_v_hicule">Supprimer ce véhicule</string>
     <string name="ajouterclient">Ajouter un client</string>
+    <string name="coordonn_es_du_client">Coordonnées du client</string>
+    <string name="nom">Nom :</string>
+    <string name="pr_nom">Prénom :</string>
+    <string name="num_ro_de_t_l_phone">Numéro de téléphone :</string>
+    <string name="email">Email :</string>
+    <string name="supprimerclient">Supprimer ce client</string>
+    <string name="adresse">Adresse :</string>
+    <string name="cp">CP :</string>
+    <string name="ville">Ville :</string>
 </resources>

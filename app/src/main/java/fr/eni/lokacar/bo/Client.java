@@ -1,6 +1,9 @@
 package fr.eni.lokacar.bo;
 
-public class Client {
+import android.os.Parcel;
+import android.os.Parcelable;
+
+public class Client implements Parcelable {
 
     private int idClient;
     private String nomClient;
@@ -24,6 +27,29 @@ public class Client {
         this.telephoneClient = telephoneClient;
         this.emailClient = emailClient;
     }
+
+    protected Client(Parcel in) {
+        idClient = in.readInt();
+        nomClient = in.readString();
+        prenomClient = in.readString();
+        adresseClient = in.readString();
+        codePostalClient = in.readInt();
+        villeClient = in.readString();
+        telephoneClient = in.readInt();
+        emailClient = in.readString();
+    }
+
+    public static final Creator<Client> CREATOR = new Creator<Client>() {
+        @Override
+        public Client createFromParcel(Parcel in) {
+            return new Client(in);
+        }
+
+        @Override
+        public Client[] newArray(int size) {
+            return new Client[size];
+        }
+    };
 
     public int getIdClient() {
         return idClient;
@@ -101,5 +127,22 @@ public class Client {
                 ", telephoneClient=" + telephoneClient +
                 ", emailClient='" + emailClient + '\'' +
                 '}';
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel parcel, int i) {
+        parcel.writeInt(idClient);
+        parcel.writeString(nomClient);
+        parcel.writeString(prenomClient);
+        parcel.writeString(adresseClient);
+        parcel.writeInt(codePostalClient);
+        parcel.writeString(villeClient);
+        parcel.writeInt(telephoneClient);
+        parcel.writeString(emailClient);
     }
 }

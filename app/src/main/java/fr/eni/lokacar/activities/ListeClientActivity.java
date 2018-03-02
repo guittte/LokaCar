@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ListAdapter;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -26,7 +27,7 @@ public class ListeClientActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_liste_client);
 
         //met l'icone a cote devant le nom de l'application
         getSupportActionBar().setDisplayShowHomeEnabled(true);
@@ -45,7 +46,7 @@ public class ListeClientActivity extends AppCompatActivity {
 
                 Client client = (Client) adapterView.getItemAtPosition(i);
 
-                Intent intent = new Intent(MainActivity.this,DetailClientActivity.class);
+                Intent intent = new Intent(ListeClientActivity.this,DetailClientActivity.class);
                 intent.putExtra("client",client);
                 startActivity(intent);
             }

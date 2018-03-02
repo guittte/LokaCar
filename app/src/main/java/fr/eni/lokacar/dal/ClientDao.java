@@ -46,7 +46,7 @@ public class ClientDao {
      * READ
      * @return resultat
      */
-    public ArrayList<Client> get(){
+    public ArrayList<Client> getListClient(){
 
         ArrayList<Client> resultat = new ArrayList<Client>();
 
