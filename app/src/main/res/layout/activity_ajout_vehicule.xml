@@ -57,7 +57,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:text="@string/ajouter"
-        android:onClick="onClickBtnInsertBdd"
+        android:onClick="onClickBtnInsertClientBdd"
         style="@style/buttonstyle"
         />
 

@@ -3,6 +3,7 @@ package fr.eni.lokacar.activities;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -28,7 +29,7 @@ public class AjoutClientActivity extends AppCompatActivity {
     getSupportActionBar().setIcon(R.drawable.rentalicon32);
     }
 
-    public void onClickBtnInsertBdd(View view) {
+    public void onClickBtnInsertClientBdd(View view) {
 
         Client client = new Client();
 
@@ -59,6 +60,7 @@ public class AjoutClientActivity extends AppCompatActivity {
         client.setTelephoneClient(telephone);
         client.setEmailClient(email);
 
+        Log.e("GGO", "insert client" +client);
 
         ClientDao dao = new ClientDao(this);
         long id = dao.insert(client);
