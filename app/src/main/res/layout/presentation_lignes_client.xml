@@ -7,14 +7,14 @@
         android:id="@+id/tv_ligne_nom_client"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nom"
+        android:text="@string/nomclicli"
         android:layout_toEndOf="@+id/icon" />
 
     <TextView
         android:id="@+id/tv_ligne_prenom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Prenom"
+        android:text="@string/prenomclicli"
         android:layout_below="@+id/tv_ligne_nom_client"
         android:layout_alignStart="@+id/tv_ligne_nom_client"
         android:layout_marginBottom="10dp"

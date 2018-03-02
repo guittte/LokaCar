@@ -75,4 +75,6 @@
     <string name="mod_leaffich">Modèle :</string>
     <string name="marque">Marque :</string>
     <string name="ajoutclient">Ajouter un client</string>
+    <string name="prenomclicli">Prenom</string>
+    <string name="nomclicli">Nom</string>
 </resources>
