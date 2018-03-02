@@ -47,7 +47,6 @@ public class ClientAdapter extends ArrayAdapter<Client> {
             }
         }
         //Et je la retourne
-        Log.i("ARO"," ClientAdapter " +convertView);
         return convertView;
     }
 

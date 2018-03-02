@@ -15,8 +15,6 @@ import fr.eni.lokacar.contracts.VehiculeContract;
 
 public class GestionBdd extends SQLiteOpenHelper {
 
-    private static final String TAG = "***GESTIONBDD***";
-
     public GestionBdd(Context context) {
         super(context, BddContract.BDD_NAME, null, BddContract.BDD_VERSION);
     }
@@ -43,11 +41,7 @@ public class GestionBdd extends SQLiteOpenHelper {
                 ");";
 
         //on l'execute
-        Log.d(TAG,requeteAgence);
         sqLiteDatabase.execSQL(requeteAgence);
-
-        //on met un log car il est facile de faire des erreurs a cet endroit
-        Log.d(TAG, "Creation table agence : " + requeteAgence);
 
 
 
@@ -78,10 +72,6 @@ public class GestionBdd extends SQLiteOpenHelper {
 
         //on l'execute
         sqLiteDatabase.execSQL(requeteEmploye);
-
-        //on met un log car il est facile de faire des erreurs a cet endroit
-        Log.d(TAG, "Creation table employe : " + requeteEmploye);
-
 
 
         String requeteVehicule =
@@ -115,10 +105,6 @@ public class GestionBdd extends SQLiteOpenHelper {
 
         //on l'execute
         sqLiteDatabase.execSQL(requeteVehicule);
-
-        //on met un log car il est facile de faire des erreurs a cet endroit
-        Log.d(TAG, "Creation table vehicule : " + requeteVehicule);
-
 
 
         String requeteClient =
@@ -154,10 +140,6 @@ public class GestionBdd extends SQLiteOpenHelper {
 
         //on l'execute
         sqLiteDatabase.execSQL(requeteClient);
-
-        //on met un log car il est facile de faire des erreurs a cet endroit
-        Log.d(TAG, "Creation table client : " + requeteClient);
-
 
 
         String requeteLocation =
@@ -196,9 +178,6 @@ public class GestionBdd extends SQLiteOpenHelper {
 
         //on l'execute
         sqLiteDatabase.execSQL(requeteLocation);
-
-        //on met un log car il est facile de faire des erreurs a cet endroit
-        Log.d(TAG, "Creation table location : " + requeteLocation);
 
     }
 

@@ -137,7 +137,6 @@ public class EmployeDao {
         String[] columns = {
                 EmployeContract.COL_IDEMPLOYE
         };
-        //SQLiteDatabase db = this.getReadableDatabase();
         // selection criteria
         String selection = EmployeContract.COL_EMAILEMPLOYE + " = ?" + " AND " + EmployeContract.COL_MOTDEPASSEEMPLOYE + " = ?";
 

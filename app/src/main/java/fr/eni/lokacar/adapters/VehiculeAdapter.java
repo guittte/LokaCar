@@ -48,7 +48,6 @@ public class VehiculeAdapter extends ArrayAdapter<Vehicule> {
             }
     }
         //Et je la retourne
-        Log.i("GGOURMEL","pompe" +convertView);
         return convertView;
     }
 
