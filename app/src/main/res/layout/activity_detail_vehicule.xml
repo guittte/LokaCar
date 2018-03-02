@@ -17,6 +17,16 @@
         android:text="@string/d_tail_de_votre_v_hicule"
         android:textStyle="bold"
         android:textSize="27sp"
+        android:paddingBottom="25dp"
+        />
+
+    <TextView
+        android:id="@+id/affiche_marque"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/marque"
+        android:layout_below="@+id/tv_titre_detail"
+        android:textColor="#dcf763"
         />
 
     <TextView
@@ -26,7 +36,17 @@
         android:text="@string/marque_du_v_hicule_detail"
         android:textStyle="bold"
         android:textSize="18sp"
-        android:layout_below="@id/tv_titre_detail"
+        android:layout_below="@id/affiche_marque"
+        android:paddingBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/affiche_modele"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mod_leaffich"
+        android:layout_below="@+id/tv_marque"
+        android:textColor="#dcf763"
         />
 
     <TextView
@@ -34,9 +54,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/mod_le_du_v_hicule"
-        android:layout_below="@id/tv_marque"
+        android:layout_below="@id/affiche_modele"
         android:textStyle="bold"
         android:textSize="18sp"
+        android:paddingBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/affiche_descri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/description"
+        android:layout_below="@+id/tv_modele"
+        android:textColor="#dcf763"
         />
 
     <TextView
@@ -44,9 +74,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/description_du_v_hicule_detail"
-        android:layout_below="@id/tv_modele"
+        android:layout_below="@id/affiche_descri"
         android:textStyle="bold"
         android:textSize="18sp"
+        android:paddingBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/affiche_immatriculation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/immatriculationaffich"
+        android:layout_below="@+id/tv_description"
+        android:textColor="#dcf763"
         />
 
     <TextView
@@ -54,9 +94,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/immatriculation_du_v_hicule"
-        android:layout_below="@id/tv_description"
+        android:layout_below="@id/affiche_immatriculation"
         android:textStyle="bold"
         android:textSize="18sp"
+        android:paddingBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/affiche_prix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/prix_par_jour_en_euros"
+        android:layout_below="@+id/tv_immatriculation"
+        android:textColor="#dcf763"
         />
 
     <TextView
@@ -64,7 +114,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/tarif_journalier_detail"
-        android:layout_below="@id/tv_immatriculation"
+        android:layout_below="@id/affiche_prix"
         android:textStyle="bold"
         android:textSize="18sp"
         />

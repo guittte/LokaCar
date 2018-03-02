@@ -62,4 +62,16 @@
     <string name="ville">Ville :</string>
     <string name="listeclients">"  Liste des clients"</string>
     <string name="détailduclient">"  Détail du client"</string>
+    <string name="nomaffich">Nom :</string>
+    <string name="prenomaffich">Prenom :</string>
+    <string name="t_l_phone">Téléphone :</string>
+    <string name="emailaffich">Email :</string>
+    <string name="adresseaffich">Adresse :</string>
+    <string name="code_postal">Code postal :</string>
+    <string name="villeaffich">Ville :</string>
+    <string name="prix_par_jour_en_euros">Prix par jour (en euros) :</string>
+    <string name="immatriculationaffich">Immatriculation :</string>
+    <string name="description">Description :</string>
+    <string name="mod_leaffich">Modèle :</string>
+    <string name="marque">Marque :</string>
 </resources>

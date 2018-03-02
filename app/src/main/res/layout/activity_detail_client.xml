@@ -17,13 +17,14 @@
         android:text="@string/coordonn_es_du_client"
         android:textStyle="bold"
         android:textSize="27sp"
+        android:paddingBottom="25dp"
         />
 
     <TextView
         android:id="@+id/affiche_nom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nom : "
+        android:text="@string/nomaffich"
         android:layout_below="@+id/tv_client_detail"
         android:textColor="#dcf763"
         />
@@ -36,13 +37,14 @@
         android:textStyle="bold"
         android:textSize="18sp"
         android:layout_below="@id/affiche_nom"
+        android:paddingBottom="10dp"
         />
 
     <TextView
         android:id="@+id/affiche_prenom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Prenom : "
+        android:text="@string/prenomaffich"
         android:layout_below="@+id/tv_nom"
         android:textColor="#dcf763"
         />
@@ -55,13 +57,14 @@
         android:layout_below="@id/affiche_prenom"
         android:textStyle="bold"
         android:textSize="18sp"
+        android:paddingBottom="10dp"
         />
 
     <TextView
         android:id="@+id/affiche_tel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Téléphone : "
+        android:text="@string/t_l_phone"
         android:layout_below="@+id/tv_prenom"
         android:textColor="#dcf763"
         />
@@ -74,13 +77,14 @@
         android:layout_below="@id/affiche_tel"
         android:textStyle="bold"
         android:textSize="18sp"
+        android:paddingBottom="10dp"
         />
 
     <TextView
         android:id="@+id/affiche_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Email : "
+        android:text="@string/emailaffich"
         android:layout_below="@+id/tv_telephone"
         android:textColor="#dcf763"
         />
@@ -93,13 +97,14 @@
         android:layout_below="@id/affiche_email"
         android:textStyle="bold"
         android:textSize="18sp"
+        android:paddingBottom="10dp"
         />
 
     <TextView
         android:id="@+id/affiche_adresse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Adresse : "
+        android:text="@string/adresseaffich"
         android:layout_below="@+id/tv_email"
         android:textColor="#dcf763"
         />
@@ -112,13 +117,14 @@
         android:layout_below="@id/affiche_adresse"
         android:textStyle="bold"
         android:textSize="18sp"
+        android:paddingBottom="10dp"
         />
 
     <TextView
         android:id="@+id/affiche_cp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Code postal : "
+        android:text="@string/code_postal"
         android:layout_below="@+id/tv_adresse"
         android:textColor="#dcf763"
         />
@@ -131,13 +137,14 @@
         android:layout_below="@id/affiche_cp"
         android:textStyle="bold"
         android:textSize="18sp"
+        android:paddingBottom="10dp"
         />
 
     <TextView
         android:id="@+id/affiche_ville"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ville : "
+        android:text="@string/villeaffich"
         android:layout_below="@+id/tv_codepostal"
         android:textColor="#dcf763"
         />
