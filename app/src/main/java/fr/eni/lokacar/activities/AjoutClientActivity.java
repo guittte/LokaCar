@@ -46,9 +46,9 @@ public class AjoutClientActivity extends AppCompatActivity {
         String nom = etNom.getText().toString();
         String prenom = etPrenom.getText().toString();
         String adresse = etAdresse.getText().toString();
-        int codePostal = Integer.parseInt(etCodePostal.getText().toString());
+        int codePostal = Integer.valueOf((etCodePostal.getText().toString()));
         String ville = etVille.getText().toString();
-        int telephone = Integer.parseInt(etTelephone.getText().toString());
+        int telephone = Integer.valueOf((etTelephone.getText().toString()));
         String email = etEmail.getText().toString();
 
 
@@ -116,7 +116,4 @@ public class AjoutClientActivity extends AppCompatActivity {
     }
 
 
-
-public void onClickBtnInsertclientBdd(View view) {
-    }
 }

@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:hint="Adresse"
         android:layout_below="@id/et_ajout_prenom"/>
-    
+
     <EditText
         android:id="@+id/et_ajout_codepostal"
         android:layout_width="match_parent"
@@ -71,7 +71,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:text="@string/ajouter"
-        android:onClick="onClickBtnInsertclientBdd"
+        android:onClick="onClickBtnInsertClientBdd"
         style="@style/buttonstyle"
         />
 
