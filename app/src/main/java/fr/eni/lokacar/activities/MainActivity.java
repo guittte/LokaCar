@@ -75,10 +75,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intention);
     }
 
-    private void menuclient(){
-        Intent intention = new Intent(getApplicationContext(),ListeClientActivity.class);
+    private void menuclient() {
+        Intent intention = new Intent(getApplicationContext(), ListeClientActivity.class);
         startActivity(intention);
-
+    }
 
     private void deconnexion(){
         Intent intention = new Intent(getApplicationContext(), LoginActivity.class);
