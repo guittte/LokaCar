@@ -42,10 +42,10 @@
             android:name=".activities.DetailVehiculeActivity"
             android:label="@string/detail" />
         <activity android:name=".activities.ListeClientActivity"
-            android:label="@string/listeclient"
+            android:label="@string/listeclients"
             />
         <activity android:name=".activities.DetailClientActivity"
-            android:label="@string/detailclient"
+            android:label="@string/détailduclient"
             />
     </application>
 
