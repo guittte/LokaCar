@@ -2,8 +2,23 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/it_menu_login"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never" />
+        android:title="@string/menu_se_deconnecter"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/it_menu_voiture"
+        android:title="@string/icone_accueil_vehicules"
+        android:icon="@drawable/icone_menu_voiture"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/it_menu_client"
+        android:title="@string/icone_accueil_clients"
+        android:icon="@drawable/icone_menu_client"
+        app:showAsAction="ifRoom"
+        />
+
+
 </menu>

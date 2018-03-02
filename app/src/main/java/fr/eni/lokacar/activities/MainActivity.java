@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -61,9 +63,48 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intention);
 
             }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        //ajoute les entrées de menu_test à l'ActionBar
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+
+    private void menuVehicule(){
+        Intent intention = new Intent(getApplicationContext(), MainActivity.class);
+        startActivity(intention);
+    }
+
+    private void menuclient(){
+        Intent intention = new Intent(getApplicationContext(),ListeClientActivity.class);
+        startActivity(intention);
 
 
+    private void deconnexion(){
+        Intent intention = new Intent(getApplicationContext(), LoginActivity.class);
+        startActivity(intention);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item)
+    {
+        switch (item.getItemId())
+        {
+            case R.id.it_menu_voiture:
+                menuVehicule();
+                break;
+            case R.id.it_menu_client:
+                menuclient();
+                break;
+            case R.id.it_menu_login:
+                deconnexion();
+                break;
         }
+        return true;
+    }
+
+
+    }
 
 
 
