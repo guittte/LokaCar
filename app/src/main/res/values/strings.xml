@@ -60,4 +60,6 @@
     <string name="adresse">Adresse :</string>
     <string name="cp">CP :</string>
     <string name="ville">Ville :</string>
+    <string name="listeclient">Liste des clients</string>
+    <string name="detailclient">Détail du client</string>
 </resources>
